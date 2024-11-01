@@ -1,0 +1,9 @@
+cassandra-driver
+jupyter
+pandas           
+tabulate
+numpy            
+matplotlib       
+kagglehub
+mysql-connector-python 
+sqlalchemy
