@@ -7,3 +7,4 @@ matplotlib
 kagglehub
 mysql-connector-python 
 sqlalchemy
+plotly
