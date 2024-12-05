@@ -6,7 +6,7 @@
 - [ ] Avantages/inconvénients du système NoSQL choisi : 2 points : TODO 
 - [ ] Comparaison sur requêtes de sélections : 4 points : 4 POINTS ?
 - [ ] Comparaison sur requêtes de mise à jour (CUD) : 3 points : + 3 POINTS ??? hmmmm
-- [ ] Graphiques (choix du diagrammes, incertitudes, etc.) : 1 points : TODO
+- [ ] Graphiques (choix du diagrammes, incertitudes, etc.) : 1 points : TODO 
 - [ ] Performance avec / sans index : 2 points : TODO
 - [ ] Prise en compte de la répartition des données : 2 points : TODO
 
