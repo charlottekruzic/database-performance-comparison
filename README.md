@@ -20,10 +20,10 @@
 - [ ] Étude : présenter, expliquer et approfondir un des aspects spécifiques du
 système NoSQL choisi.  
     Cela peut être :    
-        - [ ] Une comparaison des performances des requêtes pour un système
+        - [x] Une comparaison des performances des requêtes pour un système
         NoSQL avec un système relationnel (MySQL, postgreSQL, Oracle
         par exemple).
-        - [ ] Comparer les performances avec ou sans utilisation d’index
+        - [x] Comparer les performances avec ou sans utilisation d’index
         adaptés.
         - [ ] Évaluer l’impact en termes de performance de la réplication ou de la
         fragmentation.
@@ -34,8 +34,8 @@ système NoSQL choisi.
     - support de la concurrence d’accès, 
     - architecture, 
     - technique de distribution, 
-    - réplication / fragmentation reprise sur panne, etc.
-
+    - réplication / fragmentation,
+    - reprise sur panne, etc.
 
 Pour le système NoSQL, essayer d’améliorer les performances de requêtes
 initialement lourdes choisies : 
@@ -43,4 +43,19 @@ initialement lourdes choisies :
 - [ ] modification du stockage, 
 - [ ] modification des paramètres de durabilité et cohérence.
 
-- [ ] Tester l’impact sur les performances de la gestion de répliques.
+- [x] Tester l’impact sur les performances de la gestion de répliques.
+
+
+- replica set 1, 2 et 5
+- mémoire ? 
+- fixer le probleme 
+- prise en compte répartition des données ? ça veut dire quoi ?
+- fragmentation ? expliciter qu'on le fait pas
+
+- l'aspect à  expliciter sur "un aspect parmi"
+
+- 
+
+- modifier pour ajouter sources / re rédiger 
+
+http://b3d.bdpedia.fr/replication.html
