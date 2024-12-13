@@ -1,10 +1,10 @@
 # projet_TDLE
 
 - [x] Notebook : 2 points
-- [ ] Fonctionnement correct : 2 points : TODO : fin bug 
+- [ ] Fonctionnement correct : 2 points 
 - [x] Présentation du système NoSQL choisi : 2 points
 - [x] Avantages/inconvénients du système NoSQL choisi : 2 points 
-- [x] Comparaison sur requêtes de sélections : 4 points : 4 POINTS ?
+- [x] Comparaison sur requêtes de sélections : 4 points
 - [x] Comparaison sur requêtes de mise à jour (CUD) : 3 points 
 - [x] Graphiques (choix du diagrammes, incertitudes, etc.) : 1 points 
 - [x] Performance avec / sans index : 2 points
@@ -14,8 +14,6 @@
 - [x] Benchmarking 
 - [x] Choix du schéma
 - [x] Il vous sera demandé un notebook présentant le comparatif entre les vitesses d’exécutions des commandes CRUD pour le système relationnel et le système NoSQL.
-
-
 
 - [x] Étude : présenter, expliquer et approfondir un des aspects spécifiques du
 système NoSQL choisi.  
@@ -44,7 +42,3 @@ initialement lourdes choisies :
 - [ ] modification des paramètres de durabilité et cohérence.
 
 - [x] Tester l’impact sur les performances de la gestion de répliques.
-
-
-- rédaction
-- set up charlotte pour ubuntu dans la toute premiere cellule : faudrait bien suppr toutes les librairies pour etre sur 
