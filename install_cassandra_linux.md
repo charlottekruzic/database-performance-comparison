@@ -8,8 +8,8 @@ sqlite3 --version
 
 # Installation de Cassandra
 echo "Ajout du dépôt Cassandra et installation..."
-echo "deb https://apache.claz.org/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
-curl https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -
+echo "deb [arch=amd64] https://debian.cassandra.apache.org/ 40x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.list
+curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
 sudo apt update
 sudo apt install cassandra -y
 
