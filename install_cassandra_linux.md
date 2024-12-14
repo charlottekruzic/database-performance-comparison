@@ -21,5 +21,3 @@ sudo systemctl start cassandra
 # Vérification que Cassandra fonctionne
 echo "Vérification de Cassandra..."
 nodetool status
-
-# TODO CHARLOTTE TEST ÇA STP 
