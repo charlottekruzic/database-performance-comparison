@@ -25,7 +25,7 @@ This project compares the performance between a relational database system (SQLi
 - **Memory usage**: Both systems showed similar memory patterns across operations
 
 ## 🛠️ Installation
-Instructions are provided in `install_cassandra_linux.md`.
+Instructions are provided in [`install_cassandra_linux.md`](./install_cassandra_linux.md).
 > Note that **Python 3.11** is recommended as Python 3.12 introduces compatibility issues with some components.
 
 ## ⚙️ Note on execution
