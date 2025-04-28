@@ -1,44 +1,44 @@
-# projet_TDLE
+# SQLite vs Cassandra performance comparison
+[![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
 
-- [x] Notebook : 2 points
-- [ ] Fonctionnement correct : 2 points 
-- [x] Présentation du système NoSQL choisi : 2 points
-- [x] Avantages/inconvénients du système NoSQL choisi : 2 points 
-- [x] Comparaison sur requêtes de sélections : 4 points
-- [x] Comparaison sur requêtes de mise à jour (CUD) : 3 points 
-- [x] Graphiques (choix du diagrammes, incertitudes, etc.) : 1 points 
-- [x] Performance avec / sans index : 2 points
-- [x] Prise en compte de la répartition des données : 2 points
+## 🔎 Overview
+This project compares the performance between a relational database system (SQLite) and a NoSQL system (Cassandra), using [Netflix catalog data](https://www.kaggle.com/datasets/shivamb/netflix-shows). We evaluated CRUD operations with different data volumes, index configurations, and replica counts to provide a comprehensive performance analysis.
 
-- [x] Évaluer les performances du système pour les opérations d’insertions et mises à jour.
-- [x] Benchmarking 
-- [x] Choix du schéma
-- [x] Il vous sera demandé un notebook présentant le comparatif entre les vitesses d’exécutions des commandes CRUD pour le système relationnel et le système NoSQL.
+## 🧩 Key features
+- Complete performance benchmarking across CRUD operations
+- Index performance impact analysis
+- Replication testing (1, 2, and 5 replicas in Cassandra)
+- Testing with varied data volumes (small samples to 30K records)
 
-- [x] Étude : présenter, expliquer et approfondir un des aspects spécifiques du
-système NoSQL choisi.  
-    Cela peut être :    
-        - [x] Une comparaison des performances des requêtes pour un système
-        NoSQL avec un système relationnel (MySQL, postgreSQL, Oracle
-        par exemple).
-        - [x] Comparer les performances avec ou sans utilisation d’index
-        adaptés.
-        - [x] Évaluer l’impact en termes de performance de la réplication ou de la
-        fragmentation.
+## 💡 Main findings
+- **CREATE operations**: SQLite significantly outperforms Cassandra
+- **READ operations**: 
+  - SQLite with index provides the best performance
+  - SQLite without an index is slightly faster than Cassandra with an index
+  - Cassandra with index performs reasonably well
+  - Cassandra without index is substantially slower
+- **UPDATE/DELETE operations**:
+    - SQLite shows extremely fast performance, especially with indexes
+    - Cassandra is much slower for these operations
+    - Adding an index in Cassandra reduces execution times by approximately half
+- **Replica count**: Surprisingly, varying the number of replicas (1, 2, or 5) showed minimal performance impact in our testing environment
+- **Memory usage**: Both systems showed similar memory patterns across operations
 
-- [x] étudier un aspect parmi : 
-    - langage de recherche,
-    - indexation interne, 
-    - support de la concurrence d’accès, 
-    - architecture, 
-    - technique de distribution, 
-    - réplication / fragmentation,
-    - reprise sur panne, etc.
+## 🛠️ Installation
+Instructions are provided in `install_cassandra_linux.md`.
+> Note that **Python 3.11** is recommended as Python 3.12 introduces compatibility issues with some components.
 
-Pour le système NoSQL, essayer d’améliorer les performances de requêtes
-initialement lourdes choisies : 
-- [x] création d’index, 
-- [ ] modification du stockage, 
-- [ ] modification des paramètres de durabilité et cohérence.
+## ⚙️ Note on execution
+The complete benchmark takes approximately **45 minutes to run** due to multiple test iterations, table rebuilding between tests, and comprehensive data volume testing.
 
-- [x] Tester l’impact sur les performances de la gestion de répliques.
+## 📝 Documentation
+All analysis details, code, and results are available in the [notebook](./notebook.ipynb) (in french), along with [HTML](./notebook.html) and [PDF](./notebook.pdf) exports of the notebook for easier viewing.
+
+## 🎓 Academic context
+This project was developed during the second year of the Master’s program in Data Science and Complex Systems at the University of Strasbourg.
+
+The [original project assignment](./resources/project-assignment-fr.pdf) (in french) is also available for reference.
+
+## 👷‍♂️ Contributors
+- Zoé MARQUIS
+- Charlotte KRUZIC
